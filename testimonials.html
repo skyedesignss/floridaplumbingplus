@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews | Florida Plumbing Plus, Inc. | Melbourne, FL</title>
+    <meta name="description" content="Read real customer reviews for Florida Plumbing Plus, Inc. Trusted plumbing services in Melbourne, FL and Brevard County. 5.0 rating from local homeowners. Call 321-446-0162.">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
+
+        <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="super_favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="super_favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="super_favicon/favicon-16x16.png">
+    <link rel="manifest" href="super_favicon/site.webmanifest">
+
+</head>
+<body>
+
+<div id="header-container"></div>
+<script>
+fetch('components/header.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+
+        const script = document.createElement('script');
+        script.src = 'js/main.js';
+        document.body.appendChild(script);
+    });
+</script>
+
+<!-- ==================== CUSTOMER TESTIMONIALS ==================== -->
+<section class="testi-section">
+  <div class="testi-inner">
+
+    <!-- Header -->
+    <div class="testi-header" data-aos="fade-up">
+      <div class="testi-eyebrow">
+        <i class="fas fa-star"></i>
+        Customer reviews
+      </div>
+      <h2>Trusted by Melbourne <em>homeowners &amp; businesses</em></h2>
+      <p class="testi-subtitle">Real reviews from real customers across Brevard County and the Space Coast.</p>
+
+      <!-- Aggregate rating -->
+      <div class="testi-aggregate">
+        <div class="agg-stars" aria-label="5 out of 5 stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <span class="agg-score">5.0</span>
+        <span class="agg-divider" aria-hidden="true">·</span>
+        <span class="agg-count">181 reviews</span>
+      </div>
+    </div>
+
+    <!-- Cards grid / mobile slider -->
+    <div class="testi-slider-wrap">
+      <div class="testi-track" id="testimonial-slider">
+        <!-- Cards injected by JS -->
+      </div>
+    </div>
+
+    <!-- Controls (dots + arrows) -->
+    <div class="testi-controls" id="testi-controls">
+      <button id="prev-btn" class="testi-arrow" aria-label="Previous review">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <div class="testi-dots" id="testi-dots"></div>
+      <button id="next-btn" class="testi-arrow" aria-label="Next review">
+        <i class="fas fa-arrow-right"></i>
+      </button>
+    </div>
+
+    <!-- Footer CTA -->
+    <div class="testi-footer" data-aos="fade-up">
+      <a href="reviews.html" class="testi-all-link">
+        Read all reviews <i class="fas fa-arrow-right"></i>
+      </a>
+      <a href="https://g.page/r/your-google-review-link" target="_blank" rel="noopener" class="testi-write-link">
+        <i class="fab fa-google"></i> Leave us a review
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- SCROLL PROGRESS INDICATOR -->
+<div class="scroll-indicator" id="scrollIndicator">
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-track"></div>
+        <div class="scroll-progress-bar" id="scrollProgress"></div>
+    </div>
+    <button class="scroll-text-btn" id="scrollBtn">
+        <span id="scrollText">Scroll Down</span>
+    </button>
+</div>
+
+<!-- Scripts -->
+<script>
+    fetch('components/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.body.insertAdjacentHTML('beforeend', data);
+        });
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="assets/js/header-loader.js"></script>
+<script src="assets/js/main.js"></script></body>
+</html>

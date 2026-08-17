@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Gallery | Main Plumbing Services</title>
+    <meta name="description" content="View our recent plumbing projects across Miami-Dade County. Real work by licensed plumbers - emergency repairs, drain cleaning, water heaters, camera inspections and more.">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="super_favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="super_favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="super_favicon/favicon-16x16.png">
+    <link rel="manifest" href="super_favicon/site.webmanifest">
+
+</head>
+<body>
+
+<div id="header-container"></div>
+
+<!-- ==================== GALLERY HERO ==================== -->
+<section class="gl-hero">
+  <div class="gl-hero-overlay" aria-hidden="true"></div>
+  <div class="gl-hero-inner">
+    <div class="gl-hero-badge" data-aos="fade-up">
+      <i class="fas fa-images"></i>
+      Real projects · Real results
+    </div>
+    <h1 class="gl-hero-headline" data-aos="fade-up" data-aos-delay="100">
+      Our plumbing projects <em>&amp; work gallery</em>
+    </h1>
+    <p class="gl-hero-sub" data-aos="fade-up" data-aos-delay="200">
+      Browse recent installations, emergency repairs, drain cleaning, water heater replacements, 
+      leak detection, camera inspections, and more completed throughout Miami-Dade County.
+    </p>
+    <div class="gl-hero-ctas" data-aos="fade-up" data-aos-delay="300">
+      <a href="contact.html" class="gl-btn-primary"><i class="fas fa-calendar-check"></i> Request Service</a>
+      <a href="tel:7862693783" class="gl-btn-ghost"><i class="fas fa-phone"></i> Call Now</a>
+    </div>
+    <div class="gl-hero-chips" data-aos="fade-up" data-aos-delay="380">
+      <div class="gl-hero-chip"><i class="fas fa-shield-halved"></i> Licensed CFC1429312</div>
+      <div class="gl-hero-chip"><i class="fas fa-star"></i> 4.9 Star Rated</div>
+      <div class="gl-hero-chip"><i class="fas fa-clock"></i> Over 12 Years</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==================== GALLERY INTRO ==================== -->
+<section class="gl-intro">
+  <div class="gl-intro-inner">
+    <div class="gl-intro-text" data-aos="fade-right">
+      <div class="gl-eyebrow"><i class="fas fa-camera"></i> See our work</div>
+      <h2>Real projects by <em>licensed plumbers</em></h2>
+      <p>Every image in this gallery represents a real project completed by our licensed, insured technicians across Miami-Dade County. We document our work because we're proud of every job — big or small.</p>
+      <p>From emergency burst-pipe repairs to complete bathroom renovations, our portfolio demonstrates the quality and care we bring to every project.</p>
+    </div>
+    <div class="gl-intro-cards" data-aos="fade-left">
+      <div class="gl-highlight-card">
+        <div class="gl-highlight-icon"><i class="fas fa-circle-check"></i></div>
+        <div><strong>Licensed &amp; Insured</strong><span>Florida State Certified plumbers on every job</span></div>
+      </div>
+      <div class="gl-highlight-card">
+        <div class="gl-highlight-icon"><i class="fas fa-building"></i></div>
+        <div><strong>Residential &amp; Commercial</strong><span>Homes, condos, hotels, restaurants &amp; offices</span></div>
+      </div>
+      <div class="gl-highlight-card">
+        <div class="gl-highlight-icon"><i class="fas fa-bolt"></i></div>
+        <div><strong>Emergency Plumbing Experts</strong><span>24/7 rapid response across Miami-Dade</span></div>
+      </div>
+      <div class="gl-highlight-card">
+        <div class="gl-highlight-icon"><i class="fas fa-star"></i></div>
+        <div><strong>Quality Guaranteed</strong><span>4.9 on Google · Work backed by warranty</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==================== GALLERY GRID ==================== -->
+<section class="gl-grid-section">
+  <div class="gl-grid-inner">
+    <div class="gl-grid-header" data-aos="fade-up">
+      <div class="gl-eyebrow"><i class="fas fa-th"></i> Project gallery</div>
+      <h2>500+ completed projects <em>across Miami-Dade County</em></h2>
+    </div>
+    <div class="gl-filters" data-aos="fade-up" data-aos-delay="80">
+      <button class="gl-filter active" data-filter="all">All Projects</button>
+      <button class="gl-filter" data-filter="emergency">Emergency</button>
+      <button class="gl-filter" data-filter="water-heater">Water Heaters</button>
+      <button class="gl-filter" data-filter="drain">Drain &amp; Sewer</button>
+      <button class="gl-filter" data-filter="bathroom">Bathroom</button>
+      <button class="gl-filter" data-filter="kitchen">Kitchen</button>
+      <button class="gl-filter" data-filter="commercial">Commercial</button>
+      <button class="gl-filter" data-filter="pipe">Pipes</button>
+    </div>
+    <div class="gl-masonry" id="gl-masonry"></div>
+    <div class="gl-load-wrap" id="gl-load-wrap">
+      <button class="gl-load-btn" id="gl-load-more">Load more projects <i class="fas fa-chevron-down"></i></button>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==================== BEFORE & AFTER ==================== -->
+<section class="gl-ba-section">
+  <div class="gl-ba-inner">
+    <div class="gl-ba-header" data-aos="fade-up">
+      <div class="gl-eyebrow gl-eyebrow--light"><i class="fas fa-sliders"></i> Transformations</div>
+      <h2>Before &amp; after <em>showcase</em></h2>
+      <p class="gl-ba-sub">Drag the handle left or right to compare before and after each project.</p>
+    </div>
+    <div class="gl-ba-grid">
+      <div class="gl-ba-card" data-aos="fade-up" data-aos-delay="60">
+        <div class="gl-ba-slider">
+          <div class="gl-ba-before">
+            <img src="assets/images/hero_img1.webp" alt="Before — Water Heater" loading="lazy">
+            <span class="gl-ba-label gl-ba-label--before">Before</span>
+          </div>
+          <div class="gl-ba-after">
+            <img src="assets/images/testimonial_img.webp" alt="After — Water Heater" loading="lazy">
+            <span class="gl-ba-label gl-ba-label--after">After</span>
+          </div>
+          <div class="gl-ba-handle" aria-label="Drag to compare"><i class="fas fa-arrows-left-right"></i></div>
+        </div>
+        <div class="gl-ba-caption"><strong>Water Heater Replacement</strong><span>Tankless upgrade · Miami condo</span></div>
+      </div>
+      <div class="gl-ba-card" data-aos="fade-up" data-aos-delay="140">
+        <div class="gl-ba-slider">
+          <div class="gl-ba-before">
+            <img src="assets/images/testimonial_img.webp" alt="Before — Bathroom" loading="lazy">
+            <span class="gl-ba-label gl-ba-label--before">Before</span>
+          </div>
+          <div class="gl-ba-after">
+            <img src="assets/images/hero_img1.webp" alt="After — Bathroom" loading="lazy">
+            <span class="gl-ba-label gl-ba-label--after">After</span>
+          </div>
+          <div class="gl-ba-handle" aria-label="Drag to compare"><i class="fas fa-arrows-left-right"></i></div>
+        </div>
+        <div class="gl-ba-caption"><strong>Bathroom Plumbing Upgrade</strong><span>Full fixture replacement · Miami</span></div>
+      </div>
+      <div class="gl-ba-card" data-aos="fade-up" data-aos-delay="220">
+        <div class="gl-ba-slider">
+          <div class="gl-ba-before">
+            <img src="assets/images/hero_img1.webp" alt="Before — Pipe Repair" loading="lazy">
+            <span class="gl-ba-label gl-ba-label--before">Before</span>
+          </div>
+          <div class="gl-ba-after">
+            <img src="assets/images/testimonial_img.webp" alt="After — Pipe Repair" loading="lazy">
+            <span class="gl-ba-label gl-ba-label--after">After</span>
+          </div>
+          <div class="gl-ba-handle" aria-label="Drag to compare"><i class="fas fa-arrows-left-right"></i></div>
+        </div>
+        <div class="gl-ba-caption"><strong>Burst Pipe Repair</strong><span>Emergency repair · Miami-Dade</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==================== PROJECT CATEGORIES ==================== -->
+<section class="gl-cats-section">
+  <div class="gl-cats-inner">
+    <div class="gl-cats-header" data-aos="fade-up">
+      <div class="gl-eyebrow"><i class="fas fa-list-check"></i> Browse by type</div>
+      <h2>Explore projects by <em>category</em></h2>
+    </div>
+    <div class="gl-cats-grid">
+      <a href="services/leak-repair.html" class="gl-cat-card" data-aos="fade-up" data-aos-delay="60"><div class="gl-cat-icon"><i class="fas fa-tint"></i></div><div class="gl-cat-body"><h3>Leak Detection &amp; Repair</h3><span>View projects <i class="fas fa-arrow-right"></i></span></div></a>
+      <a href="services/water-heater-services.html" class="gl-cat-card" data-aos="fade-up" data-aos-delay="100"><div class="gl-cat-icon"><i class="fas fa-fire"></i></div><div class="gl-cat-body"><h3>Water Heater Services</h3><span>View projects <i class="fas fa-arrow-right"></i></span></div></a>
+      <a href="services/shower-tub-installation.html" class="gl-cat-card" data-aos="fade-up" data-aos-delay="140"><div class="gl-cat-icon"><i class="fas fa-shower"></i></div><div class="gl-cat-body"><h3>Bathroom Plumbing</h3><span>View projects <i class="fas fa-arrow-right"></i></span></div></a>
+      <a href="services/faucet-fixture-repair.html" class="gl-cat-card" data-aos="fade-up" data-aos-delay="180"><div class="gl-cat-icon"><i class="fas fa-faucet"></i></div><div class="gl-cat-body"><h3>Kitchen Plumbing</h3><span>View projects <i class="fas fa-arrow-right"></i></span></div></a>
+      <a href="services/commercial-plumbing.html" class="gl-cat-card" data-aos="fade-up" data-aos-delay="220"><div class="gl-cat-icon"><i class="fas fa-building"></i></div><div class="gl-cat-body"><h3>Commercial Plumbing</h3><span>View projects <i class="fas fa-arrow-right"></i></span></div></a>
+      <a href="services/emergency-plumbing.html" class="gl-cat-card" data-aos="fade-up" data-aos-delay="260"><div class="gl-cat-icon"><i class="fas fa-exclamation-triangle"></i></div><div class="gl-cat-body"><h3>Emergency Plumbing</h3><span>View projects <i class="fas fa-arrow-right"></i></span></div></a>
+      <a href="services/pipe-repair.html" class="gl-cat-card" data-aos="fade-up" data-aos-delay="300"><div class="gl-cat-icon"><i class="fas fa-tools"></i></div><div class="gl-cat-body"><h3>Pipe Repair &amp; Replacement</h3><span>View projects <i class="fas fa-arrow-right"></i></span></div></a>
+      <a href="services/drain-cleaning.html" class="gl-cat-card" data-aos="fade-up" data-aos-delay="340"><div class="gl-cat-icon"><i class="fas fa-bath"></i></div><div class="gl-cat-body"><h3>Drain &amp; Sewer Services</h3><span>View projects <i class="fas fa-arrow-right"></i></span></div></a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==================== STATS ==================== -->
+<section class="gl-stats">
+  <div class="gl-stats-inner">
+    <div class="gl-stat-card" data-aos="fade-up" data-aos-delay="60"><span class="gl-stat-num" data-target="500">0</span><span class="gl-stat-unit">+</span><span class="gl-stat-label">Projects Completed</span></div>
+    <div class="gl-stat-card" data-aos="fade-up" data-aos-delay="130"><span class="gl-stat-num" data-target="24">0</span><span class="gl-stat-unit">/7</span><span class="gl-stat-label">Emergency Service</span></div>
+    <div class="gl-stat-card" data-aos="fade-up" data-aos-delay="200"><span class="gl-stat-num" data-target="4.9">0</span><span class="gl-stat-unit">★</span><span class="gl-stat-label">Customer Satisfaction</span></div>
+    <div class="gl-stat-card" data-aos="fade-up" data-aos-delay="270"><span class="gl-stat-num" data-target="12">0</span><span class="gl-stat-unit">+</span><span class="gl-stat-label">Years Experience</span></div>
+  </div>
+</section>
+
+
+<!-- ==================== SOCIAL GRID ==================== -->
+<section class="gl-social-section">
+  <div class="gl-social-inner">
+    <div class="gl-social-header" data-aos="fade-up">
+      <div class="gl-eyebrow gl-eyebrow--light"><i class="fab fa-instagram"></i> Follow our work</div>
+      <h2>Latest projects on <em>social media</em></h2>
+      <p class="gl-social-sub">Follow us for daily project photos, tips, and behind-the-scenes looks at our work.</p>
+    </div>
+    <div class="gl-social-grid" data-aos="fade-up" data-aos-delay="80">
+      <a href="#" class="gl-social-item"><img src="assets/images/hero_img1.webp" alt="Project" loading="lazy"><div class="gl-social-overlay"><i class="fab fa-instagram"></i></div></a>
+      <a href="#" class="gl-social-item"><img src="assets/images/testimonial_img.webp" alt="Project" loading="lazy"><div class="gl-social-overlay"><i class="fab fa-instagram"></i></div></a>
+      <a href="#" class="gl-social-item"><img src="assets/images/hero_img1.webp" alt="Project" loading="lazy"><div class="gl-social-overlay"><i class="fab fa-instagram"></i></div></a>
+      <a href="#" class="gl-social-item"><img src="assets/images/testimonial_img.webp" alt="Project" loading="lazy"><div class="gl-social-overlay"><i class="fab fa-instagram"></i></div></a>
+      <a href="#" class="gl-social-item"><img src="assets/images/hero_img1.webp" alt="Project" loading="lazy"><div class="gl-social-overlay"><i class="fab fa-instagram"></i></div></a>
+      <a href="#" class="gl-social-item"><img src="assets/images/testimonial_img.webp" alt="Project" loading="lazy"><div class="gl-social-overlay"><i class="fab fa-instagram"></i></div></a>
+    </div>
+    <div class="gl-social-follow" data-aos="fade-up">
+      <a href="#" class="gl-follow-btn gl-follow-ig" target="_blank" rel="noopener"><i class="fab fa-instagram"></i> Follow on Instagram</a>
+      <a href="#" class="gl-follow-btn gl-follow-fb" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i> Follow on Facebook</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==================== FAQ ==================== -->
+<section class="gl-faq">
+  <div class="gl-faq-inner">
+    <div class="gl-faq-header" data-aos="fade-up">
+      <div class="gl-eyebrow"><i class="fas fa-circle-question"></i> Common questions</div>
+      <h2>Gallery <em>FAQs</em></h2>
+    </div>
+    <div class="gl-faq-list">
+      <div class="gl-faq-item"><button class="gl-faq-q" aria-expanded="false">Can I view examples of your previous plumbing work?<i class="fas fa-plus gl-faq-icon"></i></button><div class="gl-faq-a"><p>Absolutely — this gallery page is dedicated to showcasing our completed projects. Every photo here is from real jobs performed by our licensed technicians throughout Miami-Dade County.</p></div></div>
+      <div class="gl-faq-item"><button class="gl-faq-q" aria-expanded="false">Are these real projects completed by your team?<i class="fas fa-plus gl-faq-icon"></i></button><div class="gl-faq-a"><p>Yes, 100%. Every image in our gallery represents actual work performed by Main Plumbing Services. We document our projects because we take pride in our workmanship and want customers to see exactly what they can expect.</p></div></div>
+      <div class="gl-faq-item"><button class="gl-faq-q" aria-expanded="false">Do you work on both residential and commercial properties?<i class="fas fa-plus gl-faq-icon"></i></button><div class="gl-faq-a"><p>Yes — our gallery includes projects from homes, condos, hotels, restaurants, retail spaces, and offices. Our technicians are experienced with both residential and commercial plumbing systems.</p></div></div>
+      <div class="gl-faq-item"><button class="gl-faq-q" aria-expanded="false">Can I request a similar installation or repair?<i class="fas fa-plus gl-faq-icon"></i></button><div class="gl-faq-a"><p>Definitely. If you see a project that matches what you need, call us at <a href="tel:7862693783">(786) 269-3783</a> or use our contact form. Describe what you're looking for and we'll provide a free estimate.</p></div></div>
+      <div class="gl-faq-item"><button class="gl-faq-q" aria-expanded="false">Do you provide warranties on completed work?<i class="fas fa-plus gl-faq-icon"></i></button><div class="gl-faq-a"><p>Yes — all our work is backed by a workmanship warranty. Warranty terms vary by project type; your technician will explain the coverage before work begins.</p></div></div>
+      <div class="gl-faq-item"><button class="gl-faq-q" aria-expanded="false">How do I schedule a service appointment?<i class="fas fa-plus gl-faq-icon"></i></button><div class="gl-faq-a"><p>The fastest way is to call us at <a href="tel:7862693783">(786) 269-3783</a> — we answer 24/7. You can also use our <a href="contact.html">contact form</a> to request a free estimate. For emergencies, always call first.</p></div></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==================== FINAL CTA ==================== -->
+<section class="gl-final-cta">
+  <div class="gl-final-overlay" aria-hidden="true"></div>
+  <div class="gl-final-inner" data-aos="fade-up">
+    <div class="gl-final-text">
+      <div class="gl-eyebrow gl-eyebrow--light"><span class="live-dot" aria-hidden="true"></span> Ready to start</div>
+      <h2>Ready to start your <em>plumbing project?</em></h2>
+      <p>From emergency repairs to complete plumbing installations, our experienced team delivers reliable workmanship throughout Miami-Dade County. Get a free estimate today.</p>
+    </div>
+    <div class="gl-final-ctas">
+      <a href="contact.html" class="gl-final-btn-primary"><i class="fas fa-calendar-check"></i> Free Estimate</a>
+      <a href="tel:7862693783" class="gl-final-btn-ghost"><i class="fas fa-phone"></i> Call Now</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==================== LIGHTBOX ==================== -->
+<div class="gl-lightbox" id="gl-lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="gl-lb-close" id="gl-lb-close" aria-label="Close"><i class="fas fa-xmark"></i></button>
+  <button class="gl-lb-prev" id="gl-lb-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+  <button class="gl-lb-next" id="gl-lb-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+  <div class="gl-lb-content">
+    <img src="" alt="" id="gl-lb-img" class="gl-lb-img">
+    <div class="gl-lb-caption" id="gl-lb-caption"></div>
+  </div>
+</div>
+
+<!-- SCROLL PROGRESS INDICATOR -->
+<div class="scroll-indicator" id="scrollIndicator">
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-track"></div>
+        <div class="scroll-progress-bar" id="scrollProgress"></div>
+    </div>
+    <button class="scroll-text-btn" id="scrollBtn">
+        <span id="scrollText">Scroll Down</span>
+    </button>
+</div>
+
+<!-- Scripts -->
+<script>
+    fetch('components/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.body.insertAdjacentHTML('beforeend', data);
+        });
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="assets/js/header-loader.js"></script>
+<script src="assets/js/main.js"></script></body>
+</html>

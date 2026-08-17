@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews | Florida Plumbing Plus, Inc. | Melbourne, FL</title>
+    <meta name="description" content="Read real customer reviews for Florida Plumbing Plus, Inc. Trusted plumbing services in Melbourne, FL and Brevard County. 5.0 rating from local homeowners. Call 321-446-0162.">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
+
+        <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="super_favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="super_favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="super_favicon/favicon-16x16.png">
+    <link rel="manifest" href="super_favicon/site.webmanifest">
+
+</head>
+<body>
+
+<div id="header-container"></div>
+<script>
+fetch('components/header.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+
+        const script = document.createElement('script');
+        script.src = 'js/main.js';
+        document.body.appendChild(script);
+    });
+</script>
+<!-- ==================== REVIEWS HERO ==================== -->
+<section class="rv-hero">
+  <div class="rv-hero-overlay" aria-hidden="true"></div>
+  <div class="rv-hero-inner">
+
+    <div class="rv-hero-badge" data-aos="fade-up">
+      <i class="fas fa-star"></i>
+      181 verified reviews
+    </div>
+
+    <h1 class="rv-hero-headline" data-aos="fade-up" data-aos-delay="100">
+      What our customers <em>say about us</em>
+    </h1>
+
+    <p class="rv-hero-sub" data-aos="fade-up" data-aos-delay="200">
+      Real reviews from Melbourne and Brevard County homeowners and businesses. Honest feedback from the Space Coast community.
+    </p>
+
+    <!-- Aggregate rating -->
+    <div class="rv-hero-agg" data-aos="fade-up" data-aos-delay="300">
+      <div class="rv-agg-stars" aria-label="5 out of 5 stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <span class="rv-agg-score">5.0</span>
+      <span class="rv-agg-divider" aria-hidden="true">·</span>
+      <span class="rv-agg-label">181 reviews</span>
+    </div>
+
+    <!-- Platform chips -->
+    <div class="rv-hero-platforms" data-aos="fade-up" data-aos-delay="380">
+      <div class="rv-platform-chip">
+        <i class="fab fa-google"></i> Google
+      </div>
+      <div class="rv-platform-chip">
+        <i class="fas fa-star"></i> 5.0 Rating
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ==================== REVIEWS GRID ==================== -->
+<section class="rv-section">
+  <div class="rv-inner">
+
+    <div class="rv-header" data-aos="fade-up">
+      <div class="rv-eyebrow">
+        <i class="fas fa-quote-left"></i>
+        Customer reviews
+      </div>
+      <h2>Trusted by homeowners across <em>Melbourne &amp; Brevard County</em></h2>
+      <p class="rv-subtitle">Every review below is from a verified customer.</p>
+    </div>
+
+    <!-- Filter bar -->
+    <div class="rv-filters" id="rv-filters" data-aos="fade-up" data-aos-delay="100">
+      <button class="rv-filter active" data-filter="all">All Reviews</button>
+      <button class="rv-filter" data-filter="google">
+        <i class="fab fa-google"></i> Google
+      </button>
+      <button class="rv-filter" data-filter="yelp">
+        <i class="fab fa-yelp"></i> Yelp
+      </button>
+      <button class="rv-filter" data-filter="5">★★★★★ Only</button>
+    </div>
+
+    <!-- Cards injected by JS -->
+    <div class="rv-grid" id="rv-grid"></div>
+
+    <!-- Load more -->
+    <div class="rv-load-wrap" id="rv-load-wrap">
+      <button class="rv-load-btn" id="rv-load-more">
+        Load more reviews <i class="fas fa-chevron-down"></i>
+      </button>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ==================== WRITE A REVIEW BAND ==================== -->
+<section class="rv-write-band">
+  <div class="rv-write-inner" data-aos="fade-up">
+
+    <div class="rv-write-text">
+      <h2>Had a great experience? <em>Tell the world.</em></h2>
+      <p>Your review helps other Melbourne and Brevard County residents find a plumber they can trust.</p>
+    </div>
+
+    <div class="rv-write-btns">
+      <a href="https://g.page/r/your-google-review-link"
+         target="_blank" rel="noopener"
+         class="rv-write-btn rv-write-google">
+        <i class="fab fa-google"></i> Review on Google
+      </a>
+      <a href="https://www.yelp.com/biz/your-yelp-link"
+         target="_blank" rel="noopener"
+         class="rv-write-btn rv-write-yelp">
+        <i class="fab fa-yelp"></i> Review on Yelp
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ==================== REVIEWS PAGE CTA ==================== -->
+<section class="rv-cta-section">
+  <div class="rv-cta-inner" data-aos="fade-up">
+
+    <div class="rv-cta-left">
+      <div class="rv-cta-eyebrow">
+        <span class="live-dot" aria-hidden="true"></span>
+        Available right now
+      </div>
+      <h2 class="rv-cta-headline">
+        Ready to become our next <em>5-star customer?</em>
+      </h2>
+      <p class="rv-cta-sub">
+        Join satisfied Melbourne and Space Coast customers. Call us now and experience reliable plumbing service.
+      </p>
+    </div>
+
+    <div class="rv-cta-right">
+      <div class="rv-cta-card">
+        <p class="rv-cta-label">Call us anytime</p>
+        <a href="tel:3214460162" class="rv-cta-number">
+          <i class="fas fa-phone"></i> 321-446-0162
+        </a>
+        <p class="rv-cta-note">Speak with our helpful customer service reps.</p>
+        <div class="rv-cta-divider" aria-hidden="true"></div>
+        <div class="rv-cta-btns">
+          <a href="tel:3214460162" class="rv-btn-primary">
+            <i class="fas fa-phone"></i> Call Now
+          </a>
+          <a href="contact.html" class="rv-btn-ghost">
+            Request Service <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+        <div class="rv-cta-stars-row">
+          <div class="rv-mini-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <span>5.0 from 181 reviews</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SCROLL PROGRESS INDICATOR -->
+<div class="scroll-indicator" id="scrollIndicator">
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-track"></div>
+        <div class="scroll-progress-bar" id="scrollProgress"></div>
+    </div>
+    <button class="scroll-text-btn" id="scrollBtn">
+        <span id="scrollText">Scroll Down</span>
+    </button>
+</div>
+
+<!-- Scripts -->
+<script>
+    fetch('components/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.body.insertAdjacentHTML('beforeend', data);
+        });
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="assets/js/header-loader.js"></script>
+<script src="assets/js/main.js"></script></body>
+</html>
